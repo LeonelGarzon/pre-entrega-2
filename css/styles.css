@@ -10,28 +10,9 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }    
 /*estilos del header*/
-header{
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
-header img{
-    padding-left: 70px;
-    height: 100px;
-}
-header h1{
-    font-size: 60px;
-    font-weight: 900;
-    cursor: default;
-}
-
-header nav ul{
-    list-style: none;
-    display: flex;
-    gap: 20px;
+#navbarSupportedContent{
+    justify-content: end;
 }
 
 header nav ul li a{
@@ -46,8 +27,8 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    background: black;
-    color: tomato;
+    background: #3dbebe;
+    text-decoration: tomato;
     padding: 5px;
     border-radius: 10px;
 }
