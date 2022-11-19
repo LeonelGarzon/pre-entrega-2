@@ -6,6 +6,234 @@
 }
  /* Estilos generales*/
  body{
-    background-color: darkturquoise;
+    background-color: lightgray;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }    
+
+/*estilos del header*/
+
+#navbarSupportedContent{
+    justify-content: end;
+}
+
+header h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-size: 4rem;
+    background-image: linear-gradient(to right, tomato, lightgray);
+    
+}
+header h1:hover{
+    background-image: linear-gradient(to left, tomato, lightgray);
+}
+
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 400ms ease;
+    background-color: tomato;
+    padding: 5px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 3px black;  
+}
+
+header nav ul li a:hover{
+    background: #3dbebe;
+    text-decoration: tomato;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*estilos del main principal, productos eh infantiles*/
+
+.contenedorProductos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}  
+
+.tarjetaProducto{
+    margin: 2%;
+    padding: 7px;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color:tomato;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.tarjetaProducto:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+} 
+
+.tarjetaProducto img{
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}  
+
+.tarjetaProducto .contenidoTarjetas{
+    padding: 1%;
+    text-align: center;
+} 
+
+.tarjetaProducto .contenidoTarjetas p{
+    color: black;
+    font-size: large;
+}
+
+.tarjetaTroducto .contenidoTarjetas h2{
+    font-weight: 800;
+}
+
+.tarjetaProducto .contenidoTarjetas a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+
+.tarjetaProducto .contenidoTarjetas a:hover{
+    background: black;
+    color: tomato;
+}
+
+/* estilos contenido principal de nosotros*/
+
+main .contenidoNosotros{
+    display: flex;
+    grid-template-columns:4fr 4fr;
+    grid-template-rows: 4fr;
+    gap: 10px;
+
+}
+
+main .contenidoNosotros .imgNosotros{
+   margin: 10px;
+}
+main .contenidoNosotros .imgNosotros img{
+    width: 40vw;
+    height: 70vh;
+}
+
+.contenidoNosotros p{
+    width: 50vw;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* estilos formulario*/
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: default;
+}
+
+form fieldset{
+    background-color: tomato;
+    border: 4px solid black;
+    width: 80vw;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+form fieldset legend{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+form fieldset p{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px;
+}
+
+form fieldset input{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* estilos del footer*/
+
+footer{
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: default;
+}
+
+footer div{
+    padding: 15px;
+    height: 300px;
+    width: 300px;
+}
+
+footer div h3{
+    margin: 10px;
+    font-size: 25px;
+}
+footer div ul{
+    list-style: none;
+
+}
+
+footer div ul li{
+    padding: 5px;
+    font-size: medium;
+}
+
+footer div ul li img{
+    width: 20px;
+    height: 20px;
+}
+
+
+/*MD*/
+
+@media (max-width:576px) {
+
+    /* estilos contenido principal de nosotros*/
+
+    main .contenidoNosotros{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .contenidoNosotros .imgNosotros{
+    margin: 10px;
+    }
+    main .contenidoNosotros .imgNosotros img{
+        width: 100%;
+        height: 80%;
+    }
+
+    .contenidoNosotros p{
+        width: 90vw;
+        margin: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+}
